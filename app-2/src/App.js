@@ -23,10 +23,8 @@ class App extends Component {
         <h1>{this.state.food[2]}</h1>
         <h1>{this.state.food[3]}</h1> 
         <h1>{this.state.food[4]}</h1>
-
-
-
-      </div>
+        
+       </div>
     );
   }
 }

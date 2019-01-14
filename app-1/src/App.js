@@ -22,7 +22,7 @@ class App extends Component {
 
 
     return (
-      <div>
+      <div className="App">
         <input onChange={(e) => {this.displayText(e.target.value)}}/>
         <h1>{this.state.textBox}</h1>
       </div>

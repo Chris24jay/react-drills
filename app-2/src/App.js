@@ -6,7 +6,7 @@ class App extends Component {
     super()
 
     this.state={
-      food:["spaghetti", "ice cream", "sushi", "bologna", "cheese"],
+      food:["spaghetti","ice cream","sushi","bologna","cheese"],
     }
   }
 
@@ -15,16 +15,15 @@ class App extends Component {
 
 
   render() {
+    let displayFood = this.state.food.map((val,ind) => {
+      return (
+        <h1 key={ ind }>{ val }</h1>
+      )
+    })
     return (
       <div className="App">
-
-        <h1>{this.state.food[0]}</h1> 
-        <h1>{this.state.food[1]}</h1> 
-        <h1>{this.state.food[2]}</h1>
-        <h1>{this.state.food[3]}</h1> 
-        <h1>{this.state.food[4]}</h1>
-        
-       </div>
+          {displayFood}
+      </div>
     );
   }
 }

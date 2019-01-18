@@ -6,23 +6,22 @@ class App extends Component {
     super()
 
     this.state={
+      textBox: "",
       food:["spaghetti","ice cream","sushi","bologna","cheese"],
     }
   }
 
-  // listMyFood(val){
-  // }
-
 
   render() {
-    let displayFood = this.state.food.map((val,ind) => {
+    let foodDisplay = this.state.food.map((val) => {
       return (
-        <h1 key={ ind }>{ val }</h1>
+        <h2>{val}</h2>
       )
     })
+
     return (
       <div className="App">
-          {displayFood}
+        {foodDisplay}
       </div>
     );
   }

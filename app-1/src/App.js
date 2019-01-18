@@ -12,6 +12,7 @@ class App extends Component {
   }
 
   displayText(val){
+    console.log(val)
     this.setState({
       textBox: val
     })
